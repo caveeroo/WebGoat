@@ -60,6 +60,7 @@ public class Assignment5 extends AssignmentEndpoint {
               "select password from challenge_users where userid = ? and password = ?");
       statement.setString(1, username_login);
       statement.setString(2, password_login);
+
       ResultSet resultSet = statement.executeQuery();
 
       if (resultSet.next()) {
